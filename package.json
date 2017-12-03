@@ -1,0 +1,16 @@
+{
+  "name": "init-rem",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "author": "zhenhappy <q505507538@gmail.com> (https://github.com/zhenhappy)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenhappy/init-rem.git"
+  },
+  "dependencies": {
+    "object.assign": "^4.0.4"
+  }
+}

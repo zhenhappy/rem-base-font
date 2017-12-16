@@ -1,5 +1,5 @@
 var assign = Object.assign || require('object.assign')
-export default function initRem (options) {
+export const initRem = options => {
   options = assign({
     clientWidth : document.documentElement.clientWidth,
     designWidth : 375, // 定义设计图尺寸宽度
@@ -24,7 +24,7 @@ export default function initRem (options) {
 
   // 设置REM基准字号 1rem = 设计图尺寸 / 屏幕dpr / 基准字号
   function _setBaseFontSize () {
-    const rem = options.baseFontSize * (options.clientWidth > options.maxWidth ? options.maxWidth : options.clientWidth) / options.designWidth
+    var rem = options.baseFontSize * (options.clientWidth > options.maxWidth ? options.maxWidth : options.clientWidth) / options.designWidth
     document.documentElement.style.fontSize = rem + 'px'
   }
 
@@ -34,3 +34,4 @@ export default function initRem (options) {
     window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', _setBaseFontSize, false)
   }
 }
+export default initRem

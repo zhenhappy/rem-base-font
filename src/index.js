@@ -1,4 +1,4 @@
-export const initRem = options => {
+export const init = options => {
   options = {...{
     designWidth : 375, // 定义设计图尺寸宽度
     maxWidth    : 500, // 定义最大屏幕尺寸, 为了解决平板字体太大问题
@@ -32,4 +32,4 @@ export const initRem = options => {
     window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', _setBaseFontSize, false)
   }
 }
-export default initRem
+export default init

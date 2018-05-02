@@ -8,7 +8,7 @@
   "author": "zhenhappy <q505507538@gmail.com> (https://github.com/zhenhappy)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhenhappy/init-rem.git"
+    "url": "git+https://github.com/zhenhappy/rem-base-font.git"
   },
   "scripts": {
     "build": "webpack --config config/webpack.config.js"
